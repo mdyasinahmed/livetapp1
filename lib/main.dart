@@ -13,17 +13,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: ShoppingListPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
 class ShoppingListPage extends StatelessWidget {
   final List<Map<String, dynamic>> shoppingItems = [
-    {"name": "Apples", "icon": Icons.shopping_basket},
-    {"name": "Bananas", "icon": Icons.shopping_basket},
+    {"name": "Apples", "icon": Icons.shopping_cart},
+    {"name": "Bananas", "icon": Icons.shopping_cart},
     {"name": "Milk", "icon": Icons.shopping_cart},
     {"name": "Bread", "icon": Icons.shopping_cart},
-    {"name": "Eggs", "icon": Icons.shopping_basket},
+    {"name": "Eggs", "icon": Icons.shopping_cart},
   ];
 
   @override
